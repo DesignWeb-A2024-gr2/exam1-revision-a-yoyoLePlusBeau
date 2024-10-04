@@ -59,3 +59,29 @@ article {
 .image img{
     width: 200px;
 }
+
+.VPI {
+    display: none;
+    grid-area: VPI;
+}
+
+@media print {
+    .pub {
+        display: none;
+    }
+
+    #main_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "VPI"
+        "article"
+        "image";
+    }
+
+    .VPI {
+        display: block;
+        text-align: center;
+    }
+}

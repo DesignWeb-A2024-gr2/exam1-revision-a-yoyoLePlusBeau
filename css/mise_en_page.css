@@ -1,0 +1,50 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100vh;
+    grid-gap: 10px;
+    grid-template-areas: 
+        "menu article";
+}
+
+.article {
+    grid-area: article;
+    background-color: blueviolet;
+    text-align: justify;
+    
+}
+
+.article h1 {
+    text-align: center;
+    font-size: xxx-large;
+}
+
+.article p {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.menu h1{
+    border-bottom: 1px solid black;
+    font-size: xxx-large;
+}
+
+img {
+    width: 100px;
+
+    display: flex;
+    justify-content: center;
+}
